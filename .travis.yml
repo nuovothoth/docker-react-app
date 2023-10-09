@@ -23,6 +23,3 @@ deploy:
     branch: main
   access_key: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_ACCESS_KEY
-
-# after_success:
-#   - echo "Test Success"
