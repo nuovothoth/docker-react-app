@@ -19,40 +19,7 @@ deploy:
   env: "docker-react-app-env"
   bucket_name: "elasticbeanstalk-ap-northeast-2-201365179342"
   bucket_path: "docker-react-app"
-  access_key: "$AWS_ACCESS_KEY"
-  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  access_key: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   on:
     branch: main
-  
-
-  # deploy:
-  #   provider: elasticbeanstalk
-  #   access_key_id:
-  #     secure: "$AWS_ACCESS_KEY"
-  #   secret_access_key:
-  #     secure: "$AWS_SECRET_ACCESS_KEY"
-  #   region: "ap-northeast-2"
-  #   app: "docker-react-app"
-  #   env: "docker-react-app-env"
-  #   bucket_name: "elasticbeanstalk-ap-northeast-2-201365179342"
-  #   on
-  #     branch: main
-
-  # deploy:
-  #   provider: elasticbeanstalk
-  #   region: "ap-northeast-2"
-  #   app: "docker-react-app"
-  #   env: "docker-react-app-env"
-  #   bucket_name: "elasticbeanstalk-ap-northeast-2-201365179342"
-  #   bucket_path: "docker-react-app"
-  #   on:
-  #     branch: main
-  #   access_key_id: $AWS_ACCESS_KEY
-  #   secret_access_key: 
-  #     secure: "$AWS_SECRET_ACCESS_KEY"
-
-
-  # access_key: $AWS_ACCESS_KEY
-  # secret_access_key: $AWS_SECRET_ACCESS_KEY
-
-  # bucket_path: docker-react-app
