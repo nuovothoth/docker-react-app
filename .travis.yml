@@ -13,8 +13,8 @@ script:
   - docker run -e CI=true nuovothoth/docker-react-app npm run test -- --coverage
 
 deploy:
-  # provider: elasticbeanstalk
-  # region: "ap-northeast-2"
+  provider: elasticbeanstalk
+  region: "ap-northeast-2"
   # app: "docker-react-app"
   # env: "docker-react-app-env"
   # bucket_name: "elasticbeanstalk-ap-northeast-2-201365179342"
