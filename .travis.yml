@@ -19,10 +19,11 @@ deploy:
   env: "docker-react-app-env"
   bucket_name: "elasticbeanstalk-ap-northeast-2-201365179342"
   bucket_path: "docker-react-app"
-  on
-    branch: main
-  # access_key: "$AWS_ACCESS_KEY"
-  # secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  access_key: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  # on
+  #   branch: main
+  
 
   # deploy:
   #   provider: elasticbeanstalk
